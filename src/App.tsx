@@ -1,5 +1,3 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import TopNav from './components/common/TopNav';
 import ProductDetail from './components/product/ProductDetail';

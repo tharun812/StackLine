@@ -1,15 +1,15 @@
 import { Chart } from "react-google-charts";
-import productData from "../../data/data.json"
-
-let data: any[] = [];
-data.push([{ type: "date", label: "Date" }, {type: "number", label: "Retail Sales"}, {type: "number", label: "Wholesale Sales"}]);
-productData[0].sales.forEach((element)=>{
-    data.push([new Date(element.weekEnding), element.retailSales, element.wholesaleSales])
-})
-
-
+import { useSelector } from "react-redux";
+import { ProductSales } from "../../model/product";
 
 export default function ProductSalesChart(){
+    const product = useSelector((state:any) => state.product.product[0]);
+    let chartData: any[] = [];
+    chartData.push([{ type: "date", label: "Date" }, {type: "number", label: "Retail Sales"}, {type: "number", label: "Wholesale Sales"}]);
+    product?.sales.forEach((element: ProductSales)=>{
+        chartData.push([new Date(element.weekEnding), element.retailSales, element.wholesaleSales])
+    })
+
     const options = {
         curveType: "function",
         legend: { position: "top" },
@@ -30,8 +30,8 @@ export default function ProductSalesChart(){
             <Chart
                 chartType="LineChart"
                 width="100%"
-                height="400px"
-                data={data}
+                height="600px"
+                data={chartData}
                 options={options}
             />
         </>

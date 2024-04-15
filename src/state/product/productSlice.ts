@@ -18,7 +18,7 @@ const initialState: IinitialState = {
 }
 
 export const productSlice = createSlice({
-    name: 'Product',
+    name: 'product',
     initialState,
     reducers: {
         initializeProduct: (state, action) =>{

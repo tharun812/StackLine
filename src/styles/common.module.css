@@ -1,0 +1,21 @@
+
+
+.table{
+    width: 90%;
+    text-align: center;
+    margin: 20px 10px;
+    border: 1px solid rgb(136, 136, 136);
+    border-collapse: collapse;
+}
+
+.tableHeaderRow{
+    padding: 10px;
+    border:1px solid rgb(136, 136, 136);
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.tableRowCell{
+    padding: 5px 10px;
+    border:1px solid rgb(136, 136, 136);
+}
