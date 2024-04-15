@@ -1,0 +1,98 @@
+.productDetailView{
+    display: flex;
+    margin:35px;
+    gap:25px;
+}
+
+
+.productInfoContainer{
+    flex:1;
+    min-height: 85vh;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.productSalesChartContainer{
+    flex: 4;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+
+.productDetail{
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.productImage img{
+    width:50%;
+}
+
+.productTitle p{
+    font-weight: bold;
+    font-size: large;
+    margin: 10px;
+    text-align: center;
+}
+
+.productDesc p{
+    color: gray;
+    font-size: small;
+    text-wrap: balance;
+    line-height: 1.5;
+    margin:  10px;
+    text-align: center;
+}
+
+.horizontalLine{
+    border-top-color: white;
+}
+
+.tagContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.tagItem{
+    margin: 5px 5px;
+    padding: 5px 10px;
+    border: 1px solid lightgray;
+    font-size: smaller;
+    border-radius: 5px;
+    color: rgb(90, 90, 90);
+}
+
+.displayOptionsContainer{
+    display: flex;
+    justify-content: flex-end;
+    /* gap: 10px; */
+}
+
+.displayOptionsContainer button{
+    font-size: small;
+    color: #011f3b;
+    background-color: white;
+    border: 1px solid #011f3b;
+    padding:10px 15px;
+    cursor: pointer;
+}
+
+.activeBtn{
+    color: white !important;
+    background-color: #011f3b !important;
+    border: 1px solid #011f3b !important;
+}
+
+.displayOptionsContainer > button:hover{
+    color: white !important;
+    background-color: #011f3b !important;
+    border: 1px solid #011f3b !important;
+}
+
+/* Media Queries for mobile compatibility */
+@media screen and (max-width:598px) {
+    
+}
+
